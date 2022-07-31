@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+        <title>Form Login</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body >
+
+    <h1>Membuat Desain Form Register Dengan Javascript <br/> Kukuh</h1>
+
+        <div class="kotak_login">
+            <button onclick="buat_login()" id="x" class="tombol_lanjut">
+            Klik Disini Untuk Mendaftar
+            </button>
+        </div>
+    
+    <script type="text/javascript" src="form.js">
+        function buat_login () {
+            var elem = document.getElementById("x");
+            elem.parentElement.removeChild(elem);
+            var p = document.createElement("p");
+            p.className = "tulisan_login";
+            p.innerHTML = "silahkan login";
+            var element = document.getElementsByTagName("div")[0];
+        element.appendChild(p)
+
+            var form = document.createElement("FORM");
+            element.appendChild(form);
+            var label = document.createElement("label");
+            label.innerHTML = "Username";
+            form.appendChild(label);
+
+            var input_username = document.createElement("input");
+            input_username.type = "text";
+            input_username.name = "username";
+            input_username.className = "form_login";
+            form.appendChild(input_username);
+
+            var label2 = document.createElement("label");
+            label2.innerHTML = "Password";
+            form.appendChild(label2);
+            var input_password = document.createElement("input");
+            input_password.type = "text";
+            input_password.name = "password";
+            input_password.className = "form_login";
+
+            form.appendChild(input_password);
+
+            var tombol = document.createElement("input");
+            tombol.type = "submit";
+            tombol.className = "tombol_login";
+
+            form.appendChild(tombol);
+        }
+    </script>
+
+</body>
+</html>
