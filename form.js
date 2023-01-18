@@ -17,7 +17,7 @@ function buat_login() {
   input_username.type = "text";
   input_username.name = "username";
   input_username.className = "form_login";
-  input_username.value = "@ku2h_wicaksono";
+  input_username.placeholder = "@ku2h_wicaksono";
   form.appendChild(input_username);
 
   //   //Nomor Handphone //
@@ -31,7 +31,6 @@ function buat_login() {
   input_username.type = "tel";
   input_username.name = "username";
   input_username.className = "form_login";
-  input_username.value = "Nomor Handphone..";
   form.appendChild(input_username);
 
   //   //username//
