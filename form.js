@@ -33,6 +33,7 @@ function buat_login() {
   input_username.className = "form_login";
   form.appendChild(input_username);
 
+  
   //   //username//
   var form = document.createElement("FORM");
   element.appendChild(form);
@@ -59,7 +60,7 @@ function buat_login() {
   form.appendChild(input_password);
   //   //Password//
   var label2 = document.createElement("label");
-  label2.innerHTML = "re-Password";
+  label2.innerHTML = "Repassword";
   form.appendChild(label2);
   var input_password = document.createElement("input");
   input_password.placeholder = "password";
@@ -68,10 +69,11 @@ function buat_login() {
   input_password.className = "form_login";
   form.appendChild(input_password);
   //   //tombol submit//
-  var tombol = document.createElement("input");
+  var tombol = document.createElement("button");
   tombol.type = "submit";
-  tombol.innerHTML = "DAFTAR SEKARANG";
+  tombol.innerHTML = "submit";
   tombol.className = "tombol_login";
 
   form.appendChild(tombol);
+
 }
