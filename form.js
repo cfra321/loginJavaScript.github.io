@@ -63,9 +63,9 @@ function buat_login() {
   label2.innerHTML = "Repassword";
   form.appendChild(label2);
   var input_password = document.createElement("input");
-  input_password.placeholder = "password";
+  input_password.placeholder = "repassword";
   input_password.type = "password";
-  input_password.name = "password";
+  input_password.name = "password2";
   input_password.className = "form_login";
   form.appendChild(input_password);
   //   //tombol submit//
